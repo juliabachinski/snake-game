@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.corpo {
+    background: url(../img/backkground.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div#pontuacao {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: fantasy;
+    color: beige;
+}
+
+div#board {
+    width: 90vh;
+    height: 90vh;
+    background: linear-gradient(rgb(25, 117, 160), rgb(26, 191, 197));
+    border: 7px solid rgb(46, 2, 63);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+div.head {
+    background: linear-gradient(rgb(224, 179, 230), rgb(67, 67, 173));
+    border: 2px solid rgb(68, 3, 99);
+    /* transform: scale(1, 02); */
+    border-radius: 15px;
+}
+
+div.snake {
+    background: rgb(67, 67, 173);
+    border: rgb(68, 3, 99);
+    border-radius: 15px;
+}
+
+div.fruta {
+    background: url("../img/fruta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
